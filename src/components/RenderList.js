@@ -15,9 +15,9 @@ const RenderList = ({ whatToFetch }) => {
   return (
     <div>
       <ul>
-        {itemToRender.map(item => {
-          return <li>{item.title}</li>;
-        })}
+        {itemToRender.map(item => (
+          <li key={item.id}>{item.title}</li>
+        ))}
       </ul>
     </div>
   );
